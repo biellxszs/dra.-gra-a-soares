@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Graça Soares | Estética Integrativa — Itu, SP</title>
+<meta name="description" content="Dra. Graça Soares, biomédica esteta em Itu–SP. Tratamentos faciais e corporais com cuidado especializado. Agende pelo WhatsApp.">
+<meta property="og:title" content="Dra. Graça Soares | Estética Integrativa">
+<meta property="og:description" content="Cuidado que respeita a sua individualidade.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#A5B18A;--sage-d:#68764D;--peach:#F2AD91;--peach-d:#B8664A;
+  --bg:#FCFBF8;--bg2:#F7F4EE;--line:#E9E2D8;--ink:#3E3E3E;--mute:#6a6a6a;--on-sage:#fff;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,system-ui,sans-serif;
+  --max:1160px;--r:2px;--ease:cubic-bezier(.22,.61,.36,1);--t:.4s;
+  --s1:.5rem;--s2:1rem;--s3:2rem;--s4:4rem;--s5:clamp(4rem,9vw,8rem);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1c1e19;--bg2:#23261f;--line:#363a2e;--ink:#ece9e1;--mute:#b3b0a6;--sage-d:#B9C5A0;--peach-d:#F2AD91}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1c1e19;--bg2:#23261f;--line:#363a2e;--ink:#ece9e1;--mute:#b3b0a6;--sage-d:#B9C5A0;--peach-d:#F2AD91}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(5rem + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--sage-d);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,6.2vw,5rem)}
+h2{font-size:clamp(2rem,4vw,3.1rem)}
+h3{font-size:1.6rem}
+em{font-style:italic;color:var(--sage-d)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-d);display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem}
+.eyebrow::before{content:"";width:2rem;height:1px;background:var(--peach)}
+section{padding:var(--s5) 0}
+.lead{color:var(--mute);max-width:34rem;margin-top:1.2rem}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.7rem;min-height:48px;font-size:.84rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--sage-d);background:var(--sage-d);color:#fff;border-radius:var(--r);transition:background var(--t) var(--ease),color var(--t) var(--ease),transform var(--t) var(--ease)}
+.btn:hover{background:transparent;color:var(--sage-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--sage-d)}
+.btn.ghost:hover{background:var(--sage-d);color:#fff}
+.link{border-bottom:1px solid var(--peach);padding-bottom:2px;font-size:.9rem;transition:color var(--t),border-color var(--t)}
+.link:hover{color:var(--sage-d);border-color:var(--sage-d)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color var(--t),box-shadow var(--t);padding-top:env(safe-area-inset-top,0px)}
+header.scrolled{border-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:4.5rem}
+.brand{display:flex;align-items:center;gap:.8rem}
+.mono{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--peach);display:grid;place-items:center;font:500 1.15rem var(--serif);color:#fff;letter-spacing:-.12em}
+.brand b{display:block;font:500 1.05rem/1.1 var(--serif);letter-spacing:.14em;text-transform:uppercase}
+.brand small{display:block;font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mute)}
+nav ul{display:flex;gap:2rem;list-style:none;padding:0}
+nav a{font-size:.85rem;padding:.4rem 0;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--sage-d);transition:width var(--t) var(--ease)}
+nav a:hover::after{width:100%}
+.menu-btn{display:none;background:none;border:1px solid var(--line);width:48px;height:48px;color:var(--ink);cursor:pointer;border-radius:var(--r)}
+.hd-cta{padding:.7rem 1.2rem;min-height:44px}
+@media(max-width:860px){
+  .menu-btn{display:block}.hd-cta{display:none}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;visibility:hidden;transition:max-height .5s var(--ease),visibility .5s}
+  nav.open{max-height:24rem;visibility:visible}
+  nav ul{flex-direction:column;gap:0;padding:1rem clamp(1.25rem,4vw,2.5rem) 1.5rem}
+  nav a{display:block;padding:.9rem 0;border-bottom:1px solid var(--line)}
+}
+/* hero */
+.hero{padding:clamp(2rem,5vw,4rem) 0 var(--s5);position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.hero p.lead{font-size:1.08rem}
+.actions{display:flex;flex-wrap:wrap;gap:1.4rem 2rem;align-items:center;margin-top:2.4rem}
+.portrait{position:relative;aspect-ratio:4/5;max-width:440px;margin-left:auto;width:100%}
+.arch{position:absolute;inset:0;border-radius:999px 999px 0 0;background:linear-gradient(180deg,var(--bg2),var(--line));display:grid;place-items:center;text-align:center;padding:2rem;color:var(--mute);font-size:.8rem;overflow:hidden}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.ring{position:absolute;right:-1.6rem;bottom:2.5rem;width:7rem;height:7rem;border-radius:50%;background:var(--peach);opacity:.85;z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+.leaf{position:absolute;left:-2rem;top:1.5rem;width:5rem;height:9rem;border:1px solid var(--sage);border-radius:100% 0;opacity:.7}
+@keyframes drift{to{transform:translate(-.8rem,-1rem)}}
+@media(max-width:860px){.hero .grid{grid-template-columns:1fr}.portrait{margin:1rem auto 0;max-width:320px;order:-1}}
+/* sobre */
+.sobre{background:var(--bg2)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.ph{aspect-ratio:1/1.05;border:1px solid var(--line);background:linear-gradient(135deg,var(--bg),var(--line));display:grid;place-items:center;text-align:center;padding:2rem;color:var(--mute);font-size:.8rem;position:relative}
+.ph::after{content:"";position:absolute;inset:1rem;border:1px solid var(--sage);opacity:.5;pointer-events:none}
+.ph img{width:100%;height:100%;object-fit:cover}
+.todo{font-size:.78rem;color:var(--peach-d);margin-top:1rem}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+/* tratamentos */
+.head{max-width:40rem;margin-bottom:3.5rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.card{padding:2.2rem 2rem 2.4rem;border-bottom:1px solid var(--line);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:1rem;transition:background var(--t) var(--ease)}
+.card:last-child{border-right:0}
+.card:hover{background:var(--bg2)}
+.card .n{font:italic 1.1rem var(--serif);color:var(--peach-d)}
+.card p{color:var(--mute);font-size:.95rem;flex:1}
+@media(max-width:860px){.cards{grid-template-columns:1fr}.card{border-right:0}}
+/* profissional */
+.pro{background:var(--bg2)}
+.sig{font:italic 2rem var(--serif);color:var(--sage-d);margin-top:1.6rem}
+/* cta */
+.cta{text-align:center}
+.cta .box{border:1px solid var(--line);padding:clamp(3rem,7vw,5.5rem) 1.5rem;background:var(--bg2);position:relative}
+.cta h2{max-width:20ch;margin:0 auto}
+.cta .lead{margin:1.2rem auto 0}
+.steps{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem 2.5rem;margin:2rem 0;font-size:.85rem;color:var(--mute)}
+.steps span b{font:italic 500 1.2rem var(--serif);color:var(--peach-d);margin-right:.4rem}
+.cta .actions{justify-content:center}
+/* local */
+address{font-style:normal;margin:1.5rem 0 2rem;font-size:1.1rem}
+.mapbox{aspect-ratio:4/3;border:1px solid var(--line);background:var(--bg2);display:grid;place-items:center;text-align:center;padding:2rem}
+/* footer */
+footer{border-top:1px solid var(--line);padding:3rem 0 2rem;font-size:.9rem;color:var(--mute)}
+.fgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}
+footer ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+footer a:hover{color:var(--sage-d)}
+.legal{margin-top:2.5rem;font-size:.78rem}
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Dra. Graça Soares — início">
+      <!-- LOGOTIPO: composição tipográfica TEMPORÁRIA. Substituir pelo arquivo oficial do monograma GS quando fornecido. -->
+      <span class="mono" aria-hidden="true">GS</span>
+      <span><b>Dra. Graça Soares</b><small>Estética Integrativa</small></span>
+    </a>
+    <button class="menu-btn" id="mb" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+    <nav id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tratamentos">Tratamentos</a></li>
+        <li><a href="#profissional">A profissional</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="btn hd-cta" data-wa href="#contato" target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow rv">Biomédica esteta · Itu, SP</p>
+      <h1 class="rv" style="--d:.1s">Cuidado que respeita<br>a sua <em>individualidade.</em></h1>
+      <p class="lead rv" style="--d:.2s">Tratamentos faciais e corporais conduzidos com atenção, escuta e critério profissional, no ritmo que o seu cuidado pede.</p>
+      <div class="actions rv" style="--d:.3s">
+        <a class="btn" data-wa href="#contato" target="_blank" rel="noopener">Agendar atendimento</a>
+        <a class="link" href="#tratamentos">Conhecer os tratamentos</a>
+      </div>
+    </div>
+    <div class="portrait rv" style="--d:.2s">
+      <span class="leaf" aria-hidden="true"></span><span class="ring" aria-hidden="true"></span>
+      <div class="arch">
+        <!-- SUBSTITUIR: retrato autorizado da Dra. Graça Soares. Ex.: <img src="retrato.jpg" alt="Dra. Graça Soares" fetchpriority="high"> -->
+        <span>Retrato profissional<br>da Dra. Graça Soares<br>(a fornecer)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap split">
+    <div class="ph rv"><span><!-- SUBSTITUIR: foto da clínica ou da profissional -->Fotografia da clínica<br>(a fornecer)</span></div>
+    <div>
+      <p class="eyebrow rv">Estética Integrativa</p>
+      <h2 class="rv" style="--d:.1s">Beleza com <em>identidade</em>, cuidado com método.</h2>
+      <p class="lead rv" style="--d:.2s">A Estética Integrativa olha para a pessoa como um todo, combinando avaliação individual e tratamentos adequados a cada necessidade.</p>
+      <p class="todo rv">Texto provisório — revisar com a cliente (história, filosofia e diferenciais ainda não confirmados).</p>
+    </div>
+  </div>
+</section>
+
+<section id="tratamentos">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow rv">Tratamentos</p>
+      <h2 class="rv" style="--d:.1s">Cuidados pensados para <em>você</em>.</h2>
+    </div>
+    <div class="cards">
+      <article class="card rv"><span class="n">01</span><h3>Método Refleta</h3><p>Descrição do método a ser fornecida pela cliente.</p><a class="link" data-wa data-msg="Olá! Gostaria de saber mais sobre o Método Refleta." href="#contato" target="_blank" rel="noopener" style="align-self:flex-start">Saber mais</a></article>
+      <article class="card rv" style="--d:.12s"><span class="n">02</span><h3>Estética avançada</h3><p>Protocolos de estética avançada. Descrição e procedimentos a confirmar com a cliente.</p><a class="link" data-wa data-msg="Olá! Gostaria de saber mais sobre os tratamentos de estética avançada." href="#contato" target="_blank" rel="noopener" style="align-self:flex-start">Saber mais</a></article>
+      <article class="card rv" style="--d:.24s"><span class="n">03</span><h3>Faciais e corporais</h3><p>Tratamentos para rosto e corpo, com indicação feita após avaliação individual.</p><a class="link" data-wa data-msg="Olá! Gostaria de saber mais sobre os tratamentos faciais e corporais." href="#contato" target="_blank" rel="noopener" style="align-self:flex-start">Saber mais</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="pro" id="profissional">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow rv">A profissional</p>
+      <h2 class="rv" style="--d:.1s">Dra. Graça Soares</h2>
+      <p class="lead rv" style="--d:.2s">Biomédica esteta, à frente da Estética Integrativa em Itu, SP.</p>
+      <p class="sig rv" style="--d:.3s">Graça Soares</p>
+      <p class="todo rv">Formação, registro profissional e trajetória: a incluir somente com dados confirmados.</p>
+    </div>
+    <div class="ph rv"><span><!-- SUBSTITUIR: segundo retrato autorizado -->Retrato (a fornecer)</span></div>
+  </div>
+</section>
+
+<section class="cta" id="contato">
+  <div class="wrap">
+    <div class="box rv">
+      <p class="eyebrow" style="justify-content:center">Agendamento</p>
+      <h2>Vamos conversar sobre o seu cuidado?</h2>
+      <p class="lead">Envie uma mensagem e a equipe retorna para orientar o melhor caminho.</p>
+      <div class="steps" aria-label="Como funciona"><span><b>1</b>Chame no WhatsApp</span><span><b>2</b>Conte o que procura</span><span><b>3</b>Agende sua avaliação</span></div>
+      <div class="actions">
+        <a class="btn" data-wa href="#contato" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn ghost" data-ig href="#contato" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="local" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow rv">Localização</p>
+      <h2 class="rv" style="--d:.1s">Onde estamos</h2>
+      <address class="rv" id="addr"></address>
+      <a class="btn ghost rv" data-map href="#local" target="_blank" rel="noopener">Como chegar</a>
+      <p class="todo rv">Horários de funcionamento: a confirmar.</p>
+    </div>
+    <div class="mapbox rv"><a class="link" data-map href="#local" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="brand"><span class="mono" aria-hidden="true">GS</span><span><b>Dra. Graça Soares</b><small>Estética Integrativa</small></span></div>
+      <ul aria-label="Rodapé">
+        <li><a href="#sobre">Sobre</a></li><li><a href="#tratamentos">Tratamentos</a></li><li><a href="#contato">Contato</a></li>
+        <li><a data-ig href="#contato" target="_blank" rel="noopener">Instagram</a></li><li><a data-wa href="#contato" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+    <p class="legal">© <span id="yr"></span> Dra. Graça Soares — Estética Integrativa. Registro profissional e informações legais: a fornecer.</p>
+  </div>
+</footer>
+
+<script>
+/* ===== DADOS EDITÁVEIS (único local) ===== */
+const SITE={
+  whatsapp:"5511996774764",
+  msg:"Olá! Conheci o site da Dra. Graça Soares e gostaria de obter mais informações sobre os atendimentos.",
+  instagram:"https://www.instagram.com/dragracasoares/",
+  address:"R. Vice-Presidente José Alencar Gomes da Silva, 31, Itu, SP"
+};
+const q=(s)=>document.querySelectorAll(s);
+q("[data-wa]").forEach(a=>a.href="https://wa.me/"+SITE.whatsapp+"?text="+encodeURIComponent(a.dataset.msg||SITE.msg));
+q("[data-ig]").forEach(a=>a.href=SITE.instagram);
+q("[data-map]").forEach(a=>a.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(SITE.address));
+document.getElementById("addr").textContent=SITE.address;
+document.getElementById("yr").textContent=new Date().getFullYear();
+/* menu */
+const mb=document.getElementById("mb"),nav=document.getElementById("nav");
+const setMenu=o=>{nav.classList.toggle("open",o);mb.setAttribute("aria-expanded",o);mb.setAttribute("aria-label",o?"Fechar menu":"Abrir menu")};
+mb.onclick=()=>setMenu(!nav.classList.contains("open"));
+nav.querySelectorAll("a").forEach(a=>a.onclick=()=>setMenu(false));
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){setMenu(false)}});
+/* header + reveal */
+const hd=document.querySelector("header");
+addEventListener("scroll",()=>hd.classList.toggle("scrolled",scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+q(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
